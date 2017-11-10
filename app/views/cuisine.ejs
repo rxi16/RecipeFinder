@@ -1,0 +1,49 @@
+<% include ./partials/header %>
+<div id="wrapper" style="background: rgba(27, 26, 26, 0.64)">
+	<header class="heading">
+		<h1>RECIPE'S SEARCH</h1>
+		<p>Add Ingredient and find recipes based on Cuisine</p>
+		
+	</header>
+	
+	<section class="input-section">
+		<span class="ui-widget">
+			<input id="ingredient" type="text" placeholder="Type your Ingredient...">
+		</span>
+		<select name="cuisines" id="cuisine-name">
+			<option disabled selected value="choose cuisine">Choose a Cuisine</option>
+			<option value="american">American</option>
+			<option value="italian">Italian</option>
+			<option value="asian">Asian</option>
+			<option value="mexican">Mexican</option>
+			<option value="southern">Southern & Soul Food</option>
+			<option value="french">French</option>
+			<option value="southwestern">Southwestern</option>
+			<option value="barbecue">Barbecue</option>
+			<option value="indian">Indian</option>
+			<option value="chinese">Chinese</option>
+			<option value="cajun">Cajun & Creole</option>
+			<option value="english">English</option>
+			<option value="mediterranean">Mediterranean</option>
+			<option value="greek">Greek</option>
+			<option value="spanish">Spanish</option>
+			<option value="german">German</option>
+			<option value="thai">Thai</option>
+			<option value="moroccan">Moroccan</option>
+			<option value="irish">Irish</option>
+			<option value="japanese">Japanese</option>
+			<option value="cuban">Cuban</option>
+			<option value="hawaiin">Hawaiin</option>
+			<option value="swedish">Swedish</option>
+			<option value="hungarian">Hungarian</option>
+			<option value="portugese">Portugese</option>
+		</select>
+		<button id="searchButton" class="search">Search</button>
+	</section>
+	<div class="recipes-list">
+		<ul class="recipes-detail">
+		</ul>
+	</div>
+</div>
+<script src="js/cuisine.js"></script>
+<% include ./partials/footer %>

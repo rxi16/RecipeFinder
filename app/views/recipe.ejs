@@ -1,0 +1,45 @@
+<% include ./partials/header %>
+<div class="container-fluid">
+    <div class="row">
+        <form action="/recipe" method="post" id="save-recipe-form">
+            <div class="col-sm-5" style="background: rgba(27, 26, 26, 0.64);">
+                <h1 style="color:white">Create your recipe!</h1>
+                <!-- CREATE RECIPE FORM -->
+                <div class="form-group">
+                    <label id="title-error" style="color:darkred"></label>
+                    <input id="recipe-title" type="text" class="form-control" name="title" placeholder="Title" required="true" />
+                    <button id="add-title" type="submit" class="btn btn-warning btn-md form-control">Add title</button>
+                </div>
+                <div class="form-group">
+                    <label><span>First example: 3 large shallots <br />Second example: ½ - 1 cup chopped fresh parsley</span></label><br />
+                    <label id="ingredient-error" style="color:darkred"></label>
+                    <input id="recipe-ingredient" type="text" class="form-control" name="ingredient" placeholder="Ingredient" required="true"/>
+                    <button id="add-ingredient" type="submit" class="btn btn-warning btn-md form-control">Add ingredient</button>
+                </div>
+                <div class="form-group">
+                    <label id="preparation-error" style="color:darkred"></label>
+                    <textarea id="recipe-preparation" type="textArea" class="form-control" name="preparation" placeholder="Preparation instructions" required="true"></textarea>
+                    <button id="add-preparation" class="btn btn-warning btn-md form-control">Add prep instructions</button>
+                </div>
+                <p></p>
+            </div>
+            <div class="col-sm-7" style="background: rgba(27, 26, 26, 0.64); padding-bottom: 15px;"">
+                <h1>My Recipe!</h1>
+                <panel id="recipe-panel">
+                    <h3>Title</h3><hr /><h5 id="display-title"></h5>
+                <h3>Ingredients</h3><hr /><ul id="display-ingredient"></ul>
+                <h3>Preparation</h3><hr /><p id="display-preparation"></p>
+            </panel>
+            <br />
+            <div id="save-div">
+                <label id="save-error" style="color:darkred"></label>
+                <button id="save-recipe" type="submit" class="btn btn-warning btn-lg form-control">Save recipe</button>
+            </div>
+            <div id="success-div"></div>
+        </div>
+    </form>
+</div>
+</div>
+<panel id="nutrients-panel"></panel>
+<script src="js/recipe.js"></script>
+<% include ./partials/footer %>

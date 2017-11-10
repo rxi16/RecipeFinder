@@ -1,0 +1,30 @@
+<% include ./partials/header %>
+<div id="wrapper" style="background: rgba(27, 26, 26, 0.64)">
+	<header class="heading">
+		<h1>RECIPE'S SEARCH</h1>
+		<p>Add Ingredient and find recipes based on Allergies</p>
+	</header>
+	
+	<section class="input-section">
+		<span class="ui-widget">
+			<input id="ingredient" type="text" placeholder="Type your Ingredient...">
+		</span>
+		<select name="cuisines" id="allergen-name">
+			<option disabled selected value="choose cuisine">Choose an Allergy</option>
+			<option value="393^Gluten-Free">Gluten</option>
+			<option value="397^Egg-Free">Eggs</option>
+			<option value="394^Peanut-Free">Peanuts</option>
+			<option value="396^Dairy-Free">Dairy</option>
+			<option value="398^Seafood-Free">Sea Food</option>
+			<option value="392^Wheat-Free">Wheat</option>
+			
+		</select>
+		<button id="searchButton" class="search">Search</button>
+	</section>
+	<div class="recipes-list">
+		<ul class="recipes-detail">
+		</ul>
+	</div>
+</div>
+<script src="js/allergies.js"></script>
+<% include ./partials/footer %>

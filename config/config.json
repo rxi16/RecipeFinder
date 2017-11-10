@@ -1,0 +1,17 @@
+{
+  "development": {
+    "username": "root",
+    "password": "root",
+    "database": "recipe_blogger",
+    "host": "localhost",
+    "port":"8889",
+    "dialect": "mysql"
+  },
+  "production": {
+    "host": "yhrz9vns005e0734.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+    "username": "kylp05rvczac6xpz",
+    "password": "dgtkclik3rrcp92b",
+    "database": "nt4qw9pdp4iem3fm",
+    "dialect": "mysql"
+  }
+}

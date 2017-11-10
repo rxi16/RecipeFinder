@@ -1,0 +1,26 @@
+<% include ./partials/header %>
+<style>
+#recipe-detail img{
+width:100%;
+}
+@media(min-width:960px){
+.col-md-3 .well{
+height: 390px;
+}
+.col-md-3 img{
+height:300px;
+}
+}
+</style>
+<div class="container">
+	<div id="recipe-detail" class = "well"></div>
+</div>
+<script src="https://code.jquery.com/jquery.min.js"></script>
+<script src="js/axios.min.js"></script>
+<script src="js/allergies.js"></script>
+<script src="js/cuisine.js"></script>
+<script src="js/diet.js"></script>
+<script>
+	getRecipe();
+</script>
+<% include ./partials/footer %>

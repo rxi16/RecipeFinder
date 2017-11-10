@@ -1,0 +1,30 @@
+<% include ./partials/header %>
+<div id="wrapper" style="background: rgba(27, 26, 26, 0.64)">
+	<header class="heading">
+		<h1>RECIPE'S SEARCH</h1>
+		<p>Add Ingredient and find recipes based on Diet Preference</p>
+	</header>
+	
+	<section class="input-section">
+		<span class="ui-widget">
+			<input id="ingredient" type="text" placeholder="Type your Ingredient...">
+		</span>
+		<select name="diets" id="diet-name">
+			<option disabled selected value="choose diet">Choose a Diet</option>
+			<option value="387^Lacto-ovo vegetarian" >Lacto-Ovo-Vegetarian</option>
+			<option value="386^Vegan">Vegan</option>
+			<option value="388^Lacto vegetarian">Lacto Vegetarian</option>
+			<option value="403^Paleo">Paleo</option>
+			<option value="390^Pescetarian">Pescetarian</option>
+			<option value="389^Ovo vegetarian">Ovo Vegetarian</option>
+			
+		</select>
+		<button id="searchButton" class="search">Search</button>
+	</section>
+	<div class="recipes-list">
+		<ul class="recipes-detail">
+		</ul>
+	</div>
+</div>
+<script src="js/diet.js"></script>
+<% include ./partials/footer %>
